@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { WrapperButtons } from './Statistics.styled';
+import { StatisticsWrapper } from './Statistics.styled';
 
 export default class Statistics extends Component {
   render() {
@@ -10,13 +10,13 @@ export default class Statistics extends Component {
     }
 
     return (
-      <WrapperButtons>
+      <StatisticsWrapper>
         <li>Good: {good}</li>
         <li>Neutral: {neutral}</li>
         <li>Bad: {bad}</li>
         <li>Total: {totalFeedback}</li>
         <li>Positive feedback: {positiveFeedback} </li>
-      </WrapperButtons>
+      </StatisticsWrapper>
     );
   }
 }

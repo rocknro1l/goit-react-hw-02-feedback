@@ -1,3 +1,5 @@
 import styled from 'styled-components';
 
-export const WrapperButtons = styled.ul``;
+export const StatisticsWrapper = styled.ul`
+  list-style: none;
+`;
