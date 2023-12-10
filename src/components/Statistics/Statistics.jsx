@@ -5,10 +5,9 @@ export default class Statistics extends Component {
   render() {
     const { good, neutral, bad, totalFeedback, positiveFeedback } = this.props;
 
-    if (!totalFeedback) {
-      return <h3>There is no feedback</h3>;
-    }
-
+    // if (!totalFeedback) {
+    //   return <h3>There is no feedback</h3>;
+    // }
     return (
       <StatisticsWrapper>
         <li>Good: {good}</li>

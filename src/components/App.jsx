@@ -59,15 +59,21 @@ export class App extends Component {
         <Section title="Please leave feedback">
           <FeedbackButtons onFeedback={this.handlerClick} />
         </Section>
-        <Section title="Statistics">
-          <Statistics
-            good={good}
-            neutral={neutral}
-            bad={bad}
-            totalFeedback={totalFeedback}
-            positiveFeedback={positiveFeedback}
-          />
-        </Section>
+        {totalFeedback === 0 ? (
+          <Section title="Statistics">
+            <h3>There is no feedback</h3>
+          </Section>
+        ) : (
+          <Section title="Statistics">
+            <Statistics
+              good={good}
+              neutral={neutral}
+              bad={bad}
+              totalFeedback={totalFeedback}
+              positiveFeedback={positiveFeedback}
+            />
+          </Section>
+        )}
       </div>
     );
   }
